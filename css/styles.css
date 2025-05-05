@@ -1,0 +1,221 @@
+/* Reset and base styling */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+/* Header with background image */
+header {
+  background: url('../pictures/headerlogo.jpg') no-repeat center center;
+  background-size: cover;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 40px;
+  color: rgb(219, 15, 15);
+}
+
+/* Remove logo-img if using background */
+#logo-img, #footer-logo {
+  display: none;
+}
+
+/* Navigation styling */
+nav {
+  display: flex;
+  gap: 20px;
+}
+
+nav a {
+  padding: 10px 20px;
+  text-decoration: none;
+  color: rgb(230, 184, 184);
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+nav a.active {
+  background-color: rgba(250, 242, 242, 0.3);
+}
+
+nav a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Guest login button */
+#guest-login {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+#guest-login:hover {
+  background-color: #0056b3;
+}
+
+/* Section layout */
+#home-section, #about-section, #contact-section {
+  padding: 40px 20px;
+  text-align: center;
+  background-color: white;
+  margin: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+/* Welcome title */
+#welcome-title {
+  color: #333;
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+/* Category buttons */
+#category-buttons {
+  margin-top: 20px;
+}
+
+#category-buttons button {
+  margin: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  background-color: #555;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+}
+
+#category-buttons button.active,
+#category-buttons button:hover {
+  background-color: #007bff;
+}
+
+/* Menu grid styling */
+#menu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.menu-item {
+  background-color: white;
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 1px 6px rgba(0,0,0,0.05);
+  transition: transform 0.2s;
+}
+
+.menu-item:hover {
+  transform: scale(1.02);
+}
+
+.item-photo {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+/* Popup styling */
+#item-popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  padding: 30px;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 15px rgba(0,0,0,0.5);
+  z-index: 1000;
+  display: none;
+  border-radius: 10px;
+}
+
+#close-popup {
+  padding: 8px 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+#close-popup:hover {
+  background-color: #0056b3;
+}
+
+/* Location button */
+#location-btn {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  margin-top: 20px;
+}
+
+#location-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Map container */
+#map-container {
+  display: none;
+  margin-top: 20px;
+  text-align: center;
+}
+
+#map-container iframe {
+  width: 100%;
+  max-width: 600px;
+  height: 450px;
+  border: 0;
+  border-radius: 10px;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #333;
+  color: white;
+  margin-top: 40px;
+}
+
+#footer-content {
+  margin-bottom: 10px;
+}
+
+#footer-title {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#footer-text {
+  margin: 10px 0;
+}
+
+#social-media a {
+  margin: 0 10px;
+  color: white;
+  font-size: 24px;
+}

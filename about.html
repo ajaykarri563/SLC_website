@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About - Sri Laxmi Catering Service</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header>
+    <div id="logo-div">
+      <img id="logo-img" src="pictures/headerlogo.jpg" alt="Catering Logo">
+    </div>
+    <nav>
+      <a href="index.html" class="active">Home</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <button id="guest-login">Sri lakshmi Catering</button>
+  </header>
+
+  <main>
+    <section id="about-section">
+      <h1>About Us</h1>
+      <h1>Sri Lakshmi Catering – Taste that Delights Every Occasion!</h1>
+      <p>
+        Banupratap B is one of the owners and operators of Sri Lakshmi Caterers, a catering service established in 2012 and based in Kukatpally, Hyderabad, Telangana. He leads the business alongside his partners, Bujjibabu and Jaipaul, focusing on delivering high-quality catering for a variety of events, including weddings, birthdays, corporate functions, and traditional gatherings. Banupratap is committed to providing customized menus that cater to diverse tastes and traditions, specializing in South Indian, North Indian, Indian, Chinese, Tandoori, Mughlai, as well as both vegetarian and non-vegetarian cuisines. His dedication to rich flavors, quality service, and memorable experiences has helped Sri Lakshmi Caterers earn a reputation as a trusted food partner in the region.</p>
+      <p>Established in 2012 and proudly serving from Y-Junction, Kukatpally, Sri Laxmi Catering offers a wide variety of delicious food and catering services for all types of events – from weddings, birthdays, corporate functions to traditional gatherings.</p>
+      <h1>👉 Pure taste, perfect service – Sri Laxmi Catering is your trusted food partner!</h1>
+      <p>Owned and operated by BanuPratap and Bujjibabu, we are known for our rich flavors, quality service, and commitment to making every event memorable. Whether it's a small family function or a grand celebration, we provide customized menus to suit your taste and tradition.</p>
+      <p>Address: Sri Lakshmi Caterers, H.No. 5-5-35/258/2A1, behind Metro Cash & Carry, Mythri Nagar, Kukatpally, Hyderabad, Telangana 500072</p>
+      <button id="visiting-card-btn"><a href="pictures/visting_card.jpg" target="_blank" style="text-decoration: none; color: inherit;">View Visiting Card</a></button>
+      <button id="location-btn">Show Location</button>
+      <button id="demo-btn"><a href="pictures/demo_catering.mp4" target="_blank" style="text-decoration: none; color: inherit;">View Catering Demo</a></button>
+      <div id="map-container">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.076135683054!2d78.39698541487683!3d17.49334598799473!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb93c7c29c4b4b%3A0x3e8c7b7d8f9e6b2d!2sSri%20Lakshmi%20Caterers!5e0!3m2!1sen!2sin!4v1634567890123" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div id="footer-content">
+      <img id="footer-logo" src="pictures/footerlogo.jpg" alt="Footer Icon">
+      <span id="footer-title">sri lakshmi Catering Service</span>
+    </div>
+    <p id="footer-text">
+      We provide top-notch catering services for all your events, specializing in authentic cuisine. Let us make your occasion unforgettable with our delicious dishes and exceptional service.
+    </p>
+    <div id="social-media">
+      <a href="https://www.facebook.com/groups/208784170217236/files/files"><i class="fab fa-facebook"></i></a>
+      <a href="https://twitter.com"><i class="fab fa-twitter"></i></a>
+      <a href="https://instagram.com"><i class="fab fa-instagram"></i></a>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('location-btn').addEventListener('click', function() {
+      const mapContainer = document.getElementById('map-container');
+      if (mapContainer.style.display === 'none' || mapContainer.style.display === '') {
+        mapContainer.style.display = 'block';
+        this.textContent = 'Hide Location';
+      } else {
+        mapContainer.style.display = 'none';
+        this.textContent = 'Show Location';
+      }
+    });
+  </script>
+</body>
+</html>
